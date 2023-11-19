@@ -31,3 +31,8 @@ resource "aws_iam_role" "terraform" {
     aws_iam_policy.terraform,
   ]
 }
+
+resource "aws_iam_role_policy_attachment" "terraform" {
+  role       = aws_iam_role.terraform.name
+  policy_arn = aws_iam_policy.terraform.arn
+}
