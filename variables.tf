@@ -13,6 +13,5 @@ variable "terraform_actions" {
     "organizations:*",
     "route53:*",
     "s3:*",
-    "vpc:*",
   ]
 }
